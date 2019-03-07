@@ -30,8 +30,6 @@ public class SmsBroadcastReceiver extends BroadcastReceiver {
                 String phoneNumber = PreferenceHelper.getInstance(context).getPhoneNumber();
                 if (phoneNumber != null) {
                     for (SmsMessage smsMessage : smsMessages) {
-                        Log.d("receiver",
-                                smsMessage.toString());
                         String content = "发送方：" + smsMessage.getOriginatingAddress() + " "
                                 + "短信内容：" + smsMessage.getMessageBody();
                         Intent smsIntent = new Intent(context, SmsService.class);

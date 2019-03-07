@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">自动转发短信</string>
+
     <string name="transfer_phone_number">转发手机号</string>
+
     <string name="button_set_phone_number">设置手机号</string>
     <string name="error_input_phone_number">输入手机号有误</string>
     <string name="notification_transfer_message">转发短信通知</string>
